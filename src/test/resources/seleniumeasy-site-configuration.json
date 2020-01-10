@@ -1,0 +1,204 @@
+{
+   "version": "1.0",
+   "grid-hub": "http://localhost:4444/wd/hub",
+   "pages": {
+      "home": {
+         "start test button": {
+            "type": "id",
+            "path": "btn_basic_example",
+            "timeout": 3
+         },
+         "simple form demo": {
+            "type": "xpath",
+            "path": "//a[@class='list-group-item' and text()='Simple Form Demo']",
+            "timeout": 3
+         }
+      },
+      "form page": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//p[contains(text(),'The tag')]",
+            "timeout": 1
+         },
+         "single input field": {
+            "type": "xpath",
+            "path": "//input[@id='user-message']",
+            "timeout": 1
+         },
+         "show message": {
+            "type": "xpath",
+            "path": "//button[contains(text(),'Show Message')]",
+            "timeout": 1
+         },
+         "show message in page": {
+            "type": "id",
+            "path": "display",
+            "timeout": 3
+         },
+         "field sum one": {
+            "type": "id",
+            "path": "sum1",
+            "timeout": 1
+         },
+         "field sum two": {
+            "type": "id",
+            "path": "sum2",
+            "timeout": 1
+         },
+         "get total button": {
+            "type": "xpath",
+            "path": "//button[contains(text(),'Get Total')]",
+            "timeout": 1
+         },
+         "total text": {
+            "type": "id",
+            "path": "displayvalue",
+            "timeout": 1
+         }
+      },
+      "left menu": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//div[@class='panel-heading' and contains(text(),'Menu List')]",
+            "timeout": 1
+         },
+         "input forms": {
+            "type": "xpath",
+            "path": "//a[contains(text(),'Input Forms') and not(@class)]",
+            "timeout": 1
+         },
+         "date pickers": {
+            "type": "xpath",
+            "path": "//a[contains(text(),'Date pickers') and not(@class)]",
+            "timeout": 1
+         },
+         "table": {
+            "type": "xpath",
+            "path": "//a[contains(text(),'Table') and not(@class) and @href='#']",
+            "timeout": 1
+         },
+         "progress bars and sliders": {
+            "type": "xpath",
+            "path": "//a[contains(text(),'Progress Bars & Sliders') and not(@class)]",
+            "timeout": 1
+         },
+         "alerts and modals": {
+            "type": "xpath",
+            "path": "//a[contains(text(),'Alerts & Modals') and not(@class)]",
+            "timeout": 1
+         },
+         "list box": {
+            "type": "xpath",
+            "path": "//a[contains(text(),'List Box') and not(@class)]",
+            "timeout": 1
+         },
+         "others": {
+            "type": "xpath",
+            "path": "//a[contains(text(),'Others') and not(@class)]",
+            "timeout": 1
+         },
+         "form.simple form demo": {
+            "type": "xpath",
+            "path": "//a[text()='Simple Form Demo' and @href='./basic-first-form-demo.html']/..",
+            "timeout": 0
+         },
+         "form.checkbox demo": {
+            "type": "xpath",
+            "path": "//a[@href='./basic-checkbox-demo.html' and text()='Checkbox Demo']",
+            "timeout": 0
+         },
+         "form.radio buttons demo": {
+            "type": "xpath",
+            "path": "//a[@href='./basic-radiobutton-demo.html' and text()='Radio Buttons Demo']",
+            "timeout": 0
+         },
+         "form.select dropdown list": {
+            "type": "xpath",
+            "path": "//a[@href='./basic-select-dropdown-demo.html' and text()='Select Dropdown List']",
+            "timeout": 0
+         },
+            "form.input form submit": {
+            "type": "xpath",
+            "path": "//a[@href='./input-form-demo.html' and text()='Input Form Submit']",
+            "timeout": 0
+         },
+         "form.ajax form submit": {
+            "type": "xpath",
+            "path": "//a[@href='./ajax-form-submit-demo.html' and text()='Ajax Form Submit']",
+            "timeout": 0
+         },
+         "form.jquery select dropdown": {
+            "type": "xpath",
+            "path": "//a[@href='./jquery-dropdown-search-demo.html' and text()='JQuery Select dropdown']",
+            "timeout": 0
+         }
+      },
+      "checkbox page": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//h3[contains(text(),'This would be a basic example to start with checkboxes using selenium.')]",
+            "timeout": 1
+         }
+      },
+      "radiobutton demo": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//h3[contains(text(),'This is again simple example to start working with radio buttons using Selenium')]",
+            "timeout": 1
+         }
+      },
+      "drop down list demo": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//h3[contains(text(),'This would be your first example on select dropd down list to with Selenium')]",
+            "timeout": 1
+         }
+      },
+      "input form demo": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//h2[contains(text(),'Input form with validations')]",
+            "timeout": 1
+         }
+      },
+      "ajax form demo": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//h1[contains(text(),'Ajax Form Submit with Loading icon')]",
+            "timeout": 1
+         },
+         "name field": {
+            "type": "id",
+            "path": "title",
+            "timeout": 1
+         },
+         "name field red": {
+            "type": "xpath",
+            "path": "//input[@id='title' and @style='border: 1px solid rgb(255, 0, 0);']",
+            "timeout": 1
+         },
+         "comment field": {
+            "type": "id",
+            "path": "description",
+            "timeout": 1
+         },
+         "submit button": {
+            "type": "id",
+            "path": "btn-submit",
+            "timeout": 1
+         },
+         "submit result element": {
+            "type": "xpath",
+            "path": "//div[@id='submit-control' and contains(text(),'Form submited Successfully!')]",
+            "timeout": 3
+         }
+      },
+      "jquery drop down demo": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//h2[contains(text(),'Single Select - Search and Select country')]",
+            "timeout": 1
+         }
+      }
+   }
+}

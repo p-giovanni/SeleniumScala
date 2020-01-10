@@ -1,0 +1,30 @@
+{
+   "version": "1.0",
+   "grid-hub": "http://localhost:4444/wd/hub",
+   "pages": {
+      "home": {
+         "start test button": {
+            "type": "id",
+            "path": "btn_basic_example",
+            "timeout": 3
+         },
+         "simple form demo": {
+            "type": "xpath",
+            "path": "//a[@class='list-group-item' and text()='Simple Form Demo']",
+            "timeout": 3
+         }
+      },
+      "form page": {
+         "page verify": {
+            "type": "xpath",
+            "path": "//p[contains(text(),'The tag')]",
+            "timeout": 1
+         },
+         "single form": {
+             "type": "xpath",
+             "path": "//input[@id='user-message']",
+             "timeout": 1
+         }
+      }
+   }
+}
