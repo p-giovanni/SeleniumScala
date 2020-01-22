@@ -42,23 +42,16 @@ class TestFormPage extends BaseTest
             val textToSend = "test text"
 
             val home:Home = new Home(context.driver, context.siteConfigurations.pages.getOrElse("home", null))
-            home.pageSetup(baseUrl).left.map { e => {
-                    val msg = s"Failed to navigate to the home page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
-            }
-            home.clickStartButton().left.map { e => {
-                    val msg = s"Failed to navigate to the test page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
-            }
-            home.clickSimpleFormDemo().left.map { e => {
-                    val msg = s"Failed to navigate to the form page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
+
+            val pageSetupRv = for {
+                pageSetUpRv <- home.pageSetup(baseUrl)
+                startButtonRv <- home.clickStartButton()
+                sinpleFromRv <- home.clickSimpleFormDemo()
+            } yield (pageSetUpRv, startButtonRv, sinpleFromRv)
+            if(pageSetupRv.isLeft) {
+                val msg = s"Home page setup failed - ${pageSetupRv}."
+                log.error(msg)
+                fail(msg)
             }
             When("""
                   |The form test page is displayed and verified
@@ -112,23 +105,16 @@ class TestFormPage extends BaseTest
             val expectedResult = "40"
 
             val home:Home = new Home(context.driver, context.siteConfigurations.pages.getOrElse("home", null))
-                home.pageSetup(baseUrl).left.map { e => {
-                    val msg = s"Failed to navigate to the home page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
-            }
-            home.clickStartButton().left.map { e => {
-                    val msg = s"Failed to navigate to the test page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
-            }
-            home.clickSimpleFormDemo().left.map { e => {
-                    val msg = s"Failed to navigate to the form page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
+
+            val pageSetupRv = for {
+                pageSetUpRv <- home.pageSetup(baseUrl)
+                startButtonRv <- home.clickStartButton()
+                sinpleFromRv <- home.clickSimpleFormDemo()
+            } yield (pageSetUpRv, startButtonRv, sinpleFromRv)
+            if(pageSetupRv.isLeft) {
+                val msg = s"Home page setup failed - ${pageSetupRv}."
+                log.error(msg)
+                fail(msg)
             }
             When("""
                    |The form test page is displayed and verified
@@ -179,23 +165,16 @@ class TestFormPage extends BaseTest
             val expectedResult = "NaN"
 
             val home:Home = new Home(context.driver, context.siteConfigurations.pages.getOrElse("home", null))
-            home.pageSetup(baseUrl).left.map { e => {
-                    val msg = s"Failed to navigate to the home page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
-            }
-            home.clickStartButton().left.map { e => {
-                    val msg = s"Failed to navigate to the test page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
-            }
-            home.clickSimpleFormDemo().left.map { e => {
-                    val msg = s"Failed to navigate to the form page - ${e.toString}."
-                    log.fatal(msg)
-                    fail(msg)
-                }
+
+            val pageSetupRv = for {
+                pageSetUpRv <- home.pageSetup(baseUrl)
+                startButtonRv <- home.clickStartButton()
+                sinpleFromRv <- home.clickSimpleFormDemo()
+            } yield (pageSetUpRv, startButtonRv, sinpleFromRv)
+            if(pageSetupRv.isLeft) {
+                val msg = s"Home page setup failed - ${pageSetupRv}."
+                log.error(msg)
+                fail(msg)
             }
             When("""
                    |The form test page is displayed and verified
