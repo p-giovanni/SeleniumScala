@@ -1,7 +1,7 @@
 //
 // File: TestFormPage.scala
 // Author(s): Ing. Giovanni Rizzardi - Autumn 2019
-// Project: poc-webtest
+// Project: SeleniumScala
 //
 
 package selenium_easy
