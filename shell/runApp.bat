@@ -1,6 +1,6 @@
 @Rem #-------------------------------------------------------------------------
 @Rem # File: runApp.bat
-@Rem # Project: 
+@Rem # Project: SeleniumScala
 @Rem # Auhtor(s): Ing. Giovanni Rizzardi - Spring 2019
 @Rem #-------------------------------------------------------------------------
 
