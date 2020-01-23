@@ -44,6 +44,7 @@ use the Firefox browser for the tests.
 ```shell script
 ./shell/runTests.sh firefox
 ```
+You will find the test report in that directory: ./build/reports/tests/test/index.html
 
 ## Selenium grid
 To run the Selenium grid there are the json configuration file and the runs script in 
