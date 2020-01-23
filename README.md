@@ -14,7 +14,7 @@ The two classed that have to be seen are:
     There is also the main method that decouple the path inside the web page (like
     xpath, css, id search, ecc.) from the code that collect the object and give, to the
     program, a reference to it (an instance of Selenium WebElement).
-    See an example of the configuration file here [seleniumeasy-site-configuration.json](./test/resources/seleniumeasy-site-configuration.json)     
+    See an example of the configuration file here [seleniumeasy-site-configuration.json](./src/test/resources/seleniumeasy-site-configuration.json)     
 
 * **common**: common classes. 
 
@@ -38,9 +38,10 @@ To compile the tests:
 ./gradlew clean compileTestScala
 ```
 To run the tests I have written a small shell script that build the correct
-environment for the test execution.
-Here an example to run the test locally (no Selenium grid in that case) and 
+environment for the tests execution.
+Here an example on how to run the test locally (no Selenium grid in that case) and 
 use the Firefox browser for the tests.
+
 ```shell script
 ./shell/runTests.sh firefox
 ```
@@ -48,4 +49,5 @@ You will find the test report in that directory: ./build/reports/tests/test/inde
 
 ## Selenium grid
 To run the Selenium grid there are the json configuration file and the runs script in 
-in the directory (config)[./config] and (shell)[./shell] 
+in the directory [config](./config) and [shell](./shell) 
+
