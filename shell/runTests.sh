@@ -6,8 +6,8 @@
 
 SHELL_DIR=$(dirname ${PWD}/$0)
 PROJECT_HOME="${SHELL_DIR}/../"
-GECKO_DRIVER="/home/giovanni/code-personal/java/AVIVA-POC/bin/geckodriver"
-CHROME_DRIVER="/home/giovanni/code-personal/java/AVIVA-POC/bin/chromedriver"
+GECKO_DRIVER="/home/add-on/selenium-browser-drivers/geckodriver"
+CHROME_DRIVER="/home/add-on/selenium-browser-drivers/chromedriver"
 
 echo $PROJECT_HOME
 
