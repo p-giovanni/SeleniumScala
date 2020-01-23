@@ -1,5 +1,5 @@
 @Rem #-------------------------------------------------------------------------
-@Rem # File: run-node.bat
+@Rem # File: run-Windows-node.bat
 @Rem # Project: SeleniumScala
 @Rem # Auhtor(s): Ing. Giovanni Rizzardi - Winter 2020
 @Rem #-------------------------------------------------------------------------
