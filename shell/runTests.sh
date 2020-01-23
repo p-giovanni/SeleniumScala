@@ -1,8 +1,8 @@
 #!/bin/bash
-#
+# -----------------------------------------------------
 # File: run.sh
 # Authors(s): Giovanni Rizzardi - Autumn 2019
-#
+# -----------------------------------------------------
 
 SHELL_DIR=$(dirname ${PWD}/$0)
 PROJECT_HOME="${SHELL_DIR}/../"
