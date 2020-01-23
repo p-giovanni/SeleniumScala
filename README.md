@@ -1,4 +1,4 @@
-# SeleniumScala
+# SeleniumScala  
 An experiment in writing a web automation test using the Scala language and Selenium API. 
 
 Here I have explored the usage of Scala and ScalaTest in the web test automantion. 
