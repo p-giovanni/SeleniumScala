@@ -1,5 +1,5 @@
 @Rem #-------------------------------------------------------------------------
-@Rem # File: run-hub.bat
+@Rem # File: run-Windows-hub.bat
 @Rem # Project: SeleniumScala
 @Rem # Auhtor(s): Ing. Giovanni Rizzardi - Winter 2020
 @Rem #-------------------------------------------------------------------------
